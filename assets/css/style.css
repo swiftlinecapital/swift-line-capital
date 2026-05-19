@@ -103,7 +103,7 @@ nav ul li a:hover { background: var(--off-white); color: var(--navy); }
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   background: var(--white);
   border: 1px solid var(--border);
@@ -111,8 +111,20 @@ nav ul li a:hover { background: var(--off-white); color: var(--navy); }
   box-shadow: 0 12px 36px rgba(43,50,82,.15);
   min-width: 220px;
   padding: .5rem 0;
+  padding-top: 8px;
+  margin-top: 0;
   z-index: 500;
   flex-direction: column;
+}
+/* Invisible bridge fills the gap so hover doesn't break */
+.dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
 }
 .dropdown:hover .dropdown-menu { display: flex; }
 .dropdown-menu li a {

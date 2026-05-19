@@ -1,59 +1,49 @@
 // Mobile menu toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.querySelector('nav ul');
-
-if (menuToggle) {
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-
-  // Close menu when a link is clicked
-  const navLinks = document.querySelectorAll('nav a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
+const toggle = document.querySelector('.menu-toggle');
+const navUl = document.querySelector('nav ul');
+if (toggle && navUl) {
+  toggle.addEventListener('click', () => navUl.classList.toggle('open'));
+  document.addEventListener('click', (e) => {
+    if (!toggle.contains(e.target) && !navUl.contains(e.target)) {
+      navUl.classList.remove('open');
+    }
   });
 }
 
-// FAQ accordion
-const faqQuestions = document.querySelectorAll('.faq-question');
-faqQuestions.forEach(question => {
-  question.addEventListener('click', () => {
-    const isActive = question.classList.contains('active');
+// Animate count-up numbers in hero stats
+function animateCount(el) {
+  const target = parseFloat(el.dataset.target);
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  const duration = 1800;
+  const start = performance.now();
+  const update = (now) => {
+    const elapsed = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - elapsed, 3);
+    const val = target * eased;
+    el.textContent = prefix + (Number.isInteger(target) ? Math.floor(val) : val.toFixed(1)) + suffix;
+    if (elapsed < 1) requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
 
-    // Close all other FAQs
-    faqQuestions.forEach(q => {
-      q.classList.remove('active');
-      q.nextElementSibling.classList.remove('active');
-    });
-
-    // Toggle current FAQ
-    if (!isActive) {
-      question.classList.add('active');
-      question.nextElementSibling.classList.add('active');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('[data-target]').forEach(animateCount);
+      observer.unobserve(e.target);
     }
   });
-});
+}, { threshold: 0.3 });
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
+document.querySelectorAll('.hero-stats, .stat-cards').forEach(el => observer.observe(el));
 
-// Form handling
-const contactForm = document.querySelector('form');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // In production, send via API
-    alert('Thank you! We will contact you shortly.');
-    contactForm.reset();
-  });
+// Sticky header shadow on scroll
+const header = document.querySelector('header');
+if (header) {
+  window.addEventListener('scroll', () => {
+    header.style.boxShadow = window.scrollY > 10
+      ? '0 4px 20px rgba(43,50,82,.15)'
+      : '0 2px 12px rgba(43,50,82,.08)';
+  }, { passive: true });
 }

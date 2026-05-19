@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /apply/
-Disallow: /contact/
-
-Sitemap: https://swiftlinecapital.com/sitemap.xml

@@ -3,89 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Swift Line Capital</title>
-  <meta name="description" content="Insights on real estate investing, creative financing, and business funding from the Swift Line Capital team. Coming soon.">
-  <link rel="canonical" href="https://swiftlinecapital.com/blog/">
+  <title>Contact Us | Apply Now | Swift Line Capital</title>
+  <meta name="description" content="Get in touch with Swift Line Capital. Talk to a funding specialist about real estate loans, business funding, or 0% credit card stacking. Apply now or text us directly.">
+  <link rel="canonical" href="https://swiftlinecapital.com/contact/">
   <link rel="icon" type="image/png" href="../assets/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
   <style>
-    .blog-hero {
+    .contact-hero {
       background: var(--navy);
-      padding: 6rem 1.5rem 5rem;
+      padding: 5rem 1.5rem 4rem;
       text-align: center;
       color: var(--white);
     }
-    .blog-hero .section-label { color: var(--green); margin-bottom: .75rem; }
-    .blog-hero h1 {
+    .contact-hero .section-label { color: var(--green); margin-bottom: .75rem; }
+    .contact-hero h1 {
       font-family: 'Poppins', sans-serif;
-      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-size: clamp(2.2rem, 5vw, 3rem);
       color: var(--white);
       margin: .5rem 0 1.25rem;
     }
-    .blog-hero h1 span { color: var(--green); }
-    .blog-hero p {
+    .contact-hero h1 span { color: var(--green); }
+    .contact-hero p {
       color: rgba(255,255,255,.75);
-      font-size: 1.1rem;
-      max-width: 560px;
-      margin: 0 auto 2.5rem;
+      font-size: 1.05rem;
+      max-width: 540px;
+      margin: 0 auto;
       line-height: 1.75;
     }
 
-    .coming-soon-section {
-      padding: 6rem 1.5rem;
-      text-align: center;
+    .contact-body {
+      padding: 5rem 1.5rem;
       background: var(--off-white);
     }
-    .coming-soon-badge {
-      display: inline-block;
-      background: var(--green);
-      color: var(--white);
+    .contact-grid {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* Left column — info */
+    .contact-info-block h2 {
       font-family: 'Poppins', sans-serif;
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      padding: .45rem 1.1rem;
-      border-radius: 50px;
+      font-size: 1.7rem;
+      color: var(--navy);
+      margin-bottom: .75rem;
+    }
+    .contact-info-block > p {
+      color: var(--text-mid);
+      font-size: .97rem;
+      line-height: 1.75;
       margin-bottom: 2rem;
     }
-    .coming-soon-icon {
-      font-size: 4rem;
-      margin-bottom: 1.5rem;
-      display: block;
+
+    .info-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: box-shadow .2s, border-color .2s;
     }
-    .coming-soon-section h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    .info-card:hover { box-shadow: 0 6px 20px rgba(43,50,82,.1); border-color: var(--green); }
+    .info-icon {
+      width: 46px; height: 46px;
+      background: linear-gradient(135deg, rgba(77,184,72,.15), rgba(77,184,72,.05));
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .info-text strong {
+      display: block;
+      font-size: .85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-light);
+      margin-bottom: .2rem;
+    }
+    .info-text span {
+      font-size: 1rem;
+      font-weight: 600;
       color: var(--navy);
+    }
+
+    .hours-block {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+    .hours-block h4 {
+      font-size: .9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-light);
       margin-bottom: 1rem;
     }
-    .coming-soon-section p {
-      color: var(--text-mid);
-      font-size: 1.05rem;
-      max-width: 580px;
-      margin: 0 auto 2.5rem;
-      line-height: 1.75;
-    }
-    .coming-soon-topics {
+    .hours-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: .75rem;
-      justify-content: center;
-      max-width: 640px;
-      margin: 0 auto 3rem;
+      justify-content: space-between;
+      padding: .45rem 0;
+      font-size: .93rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-mid);
     }
-    .topic-tag {
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row strong { color: var(--navy); }
+
+    /* Right column — form */
+    .form-card {
       background: var(--white);
-      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 8px 32px rgba(43,50,82,.1);
+      border: 1px solid var(--border);
+    }
+    .form-card .section-label { margin-bottom: .4rem; }
+    .form-card h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
       color: var(--navy);
-      font-size: .88rem;
-      font-weight: 600;
-      padding: .45rem 1rem;
-      border-radius: 50px;
+      margin-bottom: .5rem;
+    }
+    .form-card > p {
+      color: var(--text-mid);
+      font-size: .93rem;
+      line-height: 1.65;
+      margin-bottom: 1.75rem;
+    }
+    .form-card iframe {
+      width: 100%;
+      min-height: 520px;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    @media (max-width: 768px) {
+      .contact-hero { padding: 3.5rem 1rem 3rem; }
+      .contact-body { padding: 3rem 1rem; }
+      .form-card { padding: 1.75rem 1.25rem; }
     }
   </style>
 </head>
@@ -127,51 +199,68 @@
         </ul>
       </li>
       <li><a href="/credit-card-stacking/">0% Credit Stacking</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/contact/" class="nav-cta">Apply Now</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contact/" class="nav-cta active">Apply Now</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- HERO -->
-<section class="blog-hero">
+<section class="contact-hero">
   <div class="section-label">Swift Line Capital</div>
-  <h1>Insights &amp; <span>Resources</span></h1>
-  <p>Real talk on real estate investing, creative financing, credit strategy, and building wealth through smart funding.</p>
+  <h1>Let's Get You <span>Funded</span></h1>
+  <p>Fill out the form below and a funding specialist will reach out within one business day to walk you through your options — no commitment required.</p>
 </section>
 
-<!-- COMING SOON -->
-<section class="coming-soon-section">
-  <div class="coming-soon-badge">Coming Soon</div>
-  <span class="coming-soon-icon">✍️</span>
-  <h2>We're Working on Something Good</h2>
-  <p>Our blog is on the way. We'll be sharing practical guides, market insights, and funding strategies from our team of active real estate investors and lending specialists.</p>
-  <div class="coming-soon-topics">
-    <span class="topic-tag">Fix &amp; Flip Strategies</span>
-    <span class="topic-tag">DSCR Loan Guides</span>
-    <span class="topic-tag">Credit Card Stacking</span>
-    <span class="topic-tag">Creative Financing</span>
-    <span class="topic-tag">Market Updates</span>
-    <span class="topic-tag">Business Funding Tips</span>
-    <span class="topic-tag">Real Estate Investing</span>
-    <span class="topic-tag">Credit Building</span>
-  </div>
-  <div class="btn-group" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-    <a href="/contact/" class="btn btn-green btn-lg">Talk to a Funding Specialist</a>
-    <a href="sms:8036536293" class="btn btn-outline btn-lg">💬 Text Us Now to Chat</a>
-  </div>
-</section>
+<!-- CONTACT BODY -->
+<section class="contact-body">
+  <div class="contact-grid">
 
-<!-- OPT-IN FORM -->
-<section class="optin-section">
-  <div class="container">
-    <div class="section-label">Get Started Today</div>
-    <h2 class="section-title">Find Out What You Qualify For</h2>
-    <p class="section-subtitle">Fill out the form below and a funding specialist will reach out to walk you through your options — no commitment required.</p>
-    <div class="optin-form-wrap">
+    <!-- Left: contact info -->
+    <div class="contact-info-block">
+      <h2>Get in Touch</h2>
+      <p>We work with real estate investors and business owners across all 50 states. Reach out however works best for you.</p>
+
+      <a href="tel:8036536293" class="info-card">
+        <div class="info-icon">📞</div>
+        <div class="info-text">
+          <strong>Call Us</strong>
+          <span>803-653-6293</span>
+        </div>
+      </a>
+
+      <a href="sms:8036536293" class="info-card">
+        <div class="info-icon">💬</div>
+        <div class="info-text">
+          <strong>Text Us</strong>
+          <span>803-653-6293</span>
+        </div>
+      </a>
+
+      <a href="mailto:support@swiftlinecapital.com" class="info-card">
+        <div class="info-icon">✉️</div>
+        <div class="info-text">
+          <strong>Email Us</strong>
+          <span>support@swiftlinecapital.com</span>
+        </div>
+      </a>
+
+      <div class="hours-block">
+        <h4>Business Hours</h4>
+        <div class="hours-row"><strong>Monday – Friday</strong><span>9:00 AM – 6:00 PM ET</span></div>
+        <div class="hours-row"><strong>Saturday</strong><span>By Appointment</span></div>
+        <div class="hours-row"><strong>Sunday</strong><span>Closed</span></div>
+      </div>
+    </div>
+
+    <!-- Right: embedded form -->
+    <div class="form-card">
+      <div class="section-label">Get Started Today</div>
+      <h2>Find Out What You Qualify For</h2>
+      <p>Tell us a little about your goals and a funding specialist will follow up to walk you through the best options for your situation.</p>
       <iframe
         src="https://api.leadconnectorhq.com/widget/form/1KZIEeJsRbu4lCdhyZRP"
-        id="inline-1KZIEeJsRbu4lCdhyZRP"
+        id="contact-form-1KZIEeJsRbu4lCdhyZRP"
         data-layout='{"id":"INLINE"}'
         data-trigger-type="alwaysShow"
         data-trigger-value=""
@@ -181,11 +270,12 @@
         data-deactivation-value=""
         data-form-name="Website Opt In"
         data-height="undefined"
-        data-layout-iframe-id="inline-1KZIEeJsRbu4lCdhyZRP"
+        data-layout-iframe-id="contact-form-1KZIEeJsRbu4lCdhyZRP"
         data-form-id="1KZIEeJsRbu4lCdhyZRP"
         title="Website Opt In">
       </iframe>
     </div>
+
   </div>
 </section>
 

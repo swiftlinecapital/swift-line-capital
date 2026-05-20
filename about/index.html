@@ -386,7 +386,7 @@
 <!-- CONTACT MODAL -->
 <div id="contact-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Get Started">
   <div class="modal-box">
-    <button id="modal-close" class="modal-close" aria-label="Close form"></body>#10005;</button>
+    <button id="modal-close" class="modal-close" aria-label="Close form">&#10005;</button>
     <div class="modal-header">
       <div class="section-label">Get Started Today</div>
       <h3>Find Out What You Qualify For</h3>
@@ -417,7 +417,7 @@
   function openModal(){ document.getElementById("contact-modal").classList.add("open"); document.body.style.overflow="hidden"; }
   function closeModal(){ document.getElementById("contact-modal").classList.remove("open"); document.body.style.overflow=""; }
   document.addEventListener("DOMContentLoaded", function(){
-    document.querySelectorAll("a[href*="/contact/"]").forEach(function(el){
+    document.querySelectorAll('a[href*="/contact/"]').forEach(function(el){
       el.addEventListener("click", function(e){ e.preventDefault(); openModal(); });
     });
     document.getElementById("modal-close").addEventListener("click", closeModal);

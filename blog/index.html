@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Swift Line Capital</title>
+  <meta name="description" content="Insights on real estate investing, creative financing, and business funding from the Swift Line Capital team. Coming soon.">
+  <link rel="canonical" href="https://swiftlinecapital.com/blog/">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .blog-hero {
+      background: var(--navy);
+      padding: 6rem 1.5rem 5rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .blog-hero .section-label { color: var(--green); margin-bottom: .75rem; }
+    .blog-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      color: var(--white);
+      margin: .5rem 0 1.25rem;
+    }
+    .blog-hero h1 span { color: var(--green); }
+    .blog-hero p {
+      color: rgba(255,255,255,.75);
+      font-size: 1.1rem;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+
+    .coming-soon-section {
+      padding: 6rem 1.5rem;
+      text-align: center;
+      background: var(--off-white);
+    }
+    .coming-soon-badge {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      font-family: 'Poppins', sans-serif;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .45rem 1.1rem;
+      border-radius: 50px;
+      margin-bottom: 2rem;
+    }
+    .coming-soon-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .coming-soon-section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .coming-soon-section p {
+      color: var(--text-mid);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+    .coming-soon-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+      max-width: 640px;
+      margin: 0 auto 3rem;
+    }
+    .topic-tag {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      color: var(--navy);
+      font-size: .88rem;
+      font-weight: 600;
+      padding: .45rem 1rem;
+      border-radius: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>📞 Fast Funding Available — Call Now: <a href="tel:8036536293">803-653-6293</a></span>
+  <div class="top-bar-social">
+    <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo"><img src="../assets/images/swipe-logo.png" alt="Swift Line Capital"></a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li class="dropdown">
+        <a href="/real-estate-loans/">Real Estate Loans ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/real-estate-loans/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+          <li><a href="/real-estate-loans/ground-up-construction/">Ground Up Construction</a></li>
+          <li><a href="/real-estate-loans/rehab-loans/">Rehab Loans</a></li>
+          <li><a href="/real-estate-loans/dscr-loans/">DSCR Loans</a></li>
+          <li><a href="/real-estate-loans/heloc/">HELOC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/business-loans/">Business Loans ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/business-loans/line-of-credit/">Line of Credit</a></li>
+          <li><a href="/business-loans/term-loans/">Term Loans</a></li>
+          <li><a href="/business-loans/sba-loans/">SBA 7(a) &amp; 504</a></li>
+          <li><a href="/business-loans/mca/">Merchant Cash Advance</a></li>
+          <li><a href="/business-loans/equipment-financing/">Equipment Financing</a></li>
+        </ul>
+      </li>
+      <li><a href="/credit-card-stacking/">0% Credit Stacking</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+      <li><a href="/contact/" class="nav-cta">Apply Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="blog-hero">
+  <div class="section-label">Swift Line Capital</div>
+  <h1>Insights &amp; <span>Resources</span></h1>
+  <p>Real talk on real estate investing, creative financing, credit strategy, and building wealth through smart funding.</p>
+</section>
+
+<!-- COMING SOON -->
+<section class="coming-soon-section">
+  <div class="coming-soon-badge">Coming Soon</div>
+  <span class="coming-soon-icon">✍️</span>
+  <h2>We're Working on Something Good</h2>
+  <p>Our blog is on the way. We'll be sharing practical guides, market insights, and funding strategies from our team of active real estate investors and lending specialists.</p>
+  <div class="coming-soon-topics">
+    <span class="topic-tag">Fix &amp; Flip Strategies</span>
+    <span class="topic-tag">DSCR Loan Guides</span>
+    <span class="topic-tag">Credit Card Stacking</span>
+    <span class="topic-tag">Creative Financing</span>
+    <span class="topic-tag">Market Updates</span>
+    <span class="topic-tag">Business Funding Tips</span>
+    <span class="topic-tag">Real Estate Investing</span>
+    <span class="topic-tag">Credit Building</span>
+  </div>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="/contact/" class="btn btn-green btn-lg">Talk to a Funding Specialist</a>
+    <a href="sms:8036536293" class="btn btn-outline btn-lg">💬 Text Us Now to Chat</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/"><img src="../assets/images/swipe-white.png" alt="Swift Line Capital"></a>
+      <p>Fast funding for real estate investors and business owners across all 50 states.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Real Estate Loans</h4>
+      <ul>
+        <li><a href="/real-estate-loans/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+        <li><a href="/real-estate-loans/ground-up-construction/">Ground Up Construction</a></li>
+        <li><a href="/real-estate-loans/rehab-loans/">Rehab Loans</a></li>
+        <li><a href="/real-estate-loans/dscr-loans/">DSCR Loans</a></li>
+        <li><a href="/real-estate-loans/heloc/">HELOC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Business Loans</h4>
+      <ul>
+        <li><a href="/business-loans/line-of-credit/">Line of Credit</a></li>
+        <li><a href="/business-loans/term-loans/">Term Loans</a></li>
+        <li><a href="/business-loans/sba-loans/">SBA 7(a) &amp; 504</a></li>
+        <li><a href="/business-loans/mca/">Merchant Cash Advance</a></li>
+        <li><a href="/business-loans/equipment-financing/">Equipment Financing</a></li>
+        <li><a href="/credit-card-stacking/">0% Credit Stacking</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/disclosure-statement/">Disclosure Statement</a></li>
+      </ul>
+      <div style="margin-top:1.25rem;">
+        <div class="contact-item">📞 <a href="tel:8036536293">803-653-6293</a></div>
+        <div class="contact-item">✉️ <a href="mailto:support@swiftlinecapital.com">support@swiftlinecapital.com</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Swift Line Capital. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-of-use/">Terms of Use</a>
+      <a href="/disclosure-statement/">Disclosures</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -111,8 +111,40 @@
     .req-banner strong { color: var(--navy); }
 
     @media (max-width: 768px) {
-      .stack-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .stack-hero { padding: 3.5rem 1rem 3rem; }
+      .stack-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
       .benefit-grid { grid-template-columns: 1fr; }
+      .stack-section { padding: 3rem 1rem; }
+      .stack-cta { padding: 3rem 1rem; }
+
+      /* Requirements + Process: stack vertically on mobile */
+      .two-col-wrap {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+      }
+
+      /* Use case grid: 2-col on mobile is fine, shrink min-width */
+      .use-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+
+      /* Steps: more readable spacing */
+      .steps-wrap { gap: 1.25rem; margin-top: 1.5rem; }
+      .step-body p { font-size: .9rem; }
+
+      /* Qual list */
+      .qual-list li { font-size: .93rem; }
+
+      /* Req banner */
+      .req-banner { padding: 1rem 1.1rem; }
+      .req-banner p { font-size: .9rem; }
+    }
+
+    @media (max-width: 480px) {
+      .stack-section { padding: 2.5rem 1rem; }
+      .highlight-card { padding: 1.5rem 1.25rem; }
+      .hc-row { font-size: .88rem; }
+      .use-grid { grid-template-columns: 1fr 1fr; gap: .75rem; }
+      .use-card { padding: 1.1rem .75rem; }
+      .use-card h4 { font-size: .85rem; }
     }
   </style>
 </head>

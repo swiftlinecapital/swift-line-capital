@@ -349,12 +349,24 @@ section { padding: 5rem 1.5rem; }
   font-weight: 600;
   white-space: nowrap;
   transition: all .2s;
-  cursor: default;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+a.product-pill:hover {
+  background: rgba(255,255,255,.2);
+  color: var(--white);
+  border-color: rgba(255,255,255,.3);
+  transform: translateY(-1px);
 }
 .product-pill.featured {
   background: var(--green);
   color: var(--white);
   border-color: var(--green);
+}
+a.product-pill.featured:hover {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
 }
 
 /* ============ CARDS ============ */

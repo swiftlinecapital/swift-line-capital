@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/0",
+      "destination": "/credit-card-stacking/",
+      "permanent": false
+    }
+  ]
+}

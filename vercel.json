@@ -1,21 +1,94 @@
 {
   "redirects": [
-    { "source": "/0percent",               "destination": "/credit-card-stacking/",              "permanent": false },
-    { "source": "/0",                      "destination": "/credit-card-stacking/",              "permanent": false },
-    { "source": "/heloc",                  "destination": "/real-estate-loans/heloc/",           "permanent": false },
-    { "source": "/fixandflip",             "destination": "/real-estate-loans/fix-and-flip/",    "permanent": false },
-    { "source": "/groundup",              "destination": "/real-estate-loans/ground-up-construction/", "permanent": false },
-    { "source": "/rehab",                  "destination": "/real-estate-loans/rehab-loans/",     "permanent": false },
-    { "source": "/dscr",                   "destination": "/real-estate-loans/dscr-loans/",      "permanent": false },
-    { "source": "/bloc",                   "destination": "/business-loans/line-of-credit/",     "permanent": false },
-    { "source": "/termloan",               "destination": "/business-loans/term-loans/",         "permanent": false },
-    { "source": "/sba",                    "destination": "/business-loans/sba-loans/",          "permanent": false },
-    { "source": "/mca",                    "destination": "/business-loans/mca/",                "permanent": false },
-    { "source": "/equipment",              "destination": "/business-loans/equipment-financing/", "permanent": false },
-    { "source": "/reviews",                "destination": "/reviews/",                           "permanent": false },
-    { "source": "/partners",               "destination": "/partners/",                          "permanent": false },
-    { "source": "/contact",                "destination": "/contact/",                           "permanent": false },
-    { "source": "/about",                  "destination": "/about/",                             "permanent": false },
-    { "source": "/blog",                   "destination": "/blog/",                              "permanent": false }
+    {
+      "source": "/real-estate-loans/heloc",
+      "destination": "/heloc/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/heloc/",
+      "destination": "/heloc/",
+      "permanent": true
+    },
+    {
+      "source": "/0percent",
+      "destination": "/credit-card-stacking/",
+      "permanent": false
+    },
+    {
+      "source": "/0",
+      "destination": "/credit-card-stacking/",
+      "permanent": false
+    },
+    {
+      "source": "/fixandflip",
+      "destination": "/real-estate-loans/fix-and-flip/",
+      "permanent": false
+    },
+    {
+      "source": "/groundup",
+      "destination": "/real-estate-loans/ground-up-construction/",
+      "permanent": false
+    },
+    {
+      "source": "/rehab",
+      "destination": "/real-estate-loans/rehab-loans/",
+      "permanent": false
+    },
+    {
+      "source": "/dscr",
+      "destination": "/real-estate-loans/dscr-loans/",
+      "permanent": false
+    },
+    {
+      "source": "/bloc",
+      "destination": "/business-loans/line-of-credit/",
+      "permanent": false
+    },
+    {
+      "source": "/termloan",
+      "destination": "/business-loans/term-loans/",
+      "permanent": false
+    },
+    {
+      "source": "/sba",
+      "destination": "/business-loans/sba-loans/",
+      "permanent": false
+    },
+    {
+      "source": "/mca",
+      "destination": "/business-loans/mca/",
+      "permanent": false
+    },
+    {
+      "source": "/equipment",
+      "destination": "/business-loans/equipment-financing/",
+      "permanent": false
+    },
+    {
+      "source": "/reviews",
+      "destination": "/reviews/",
+      "permanent": false
+    },
+    {
+      "source": "/partners",
+      "destination": "/partners/",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "permanent": false
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "permanent": false
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "permanent": false
+    }
   ]
 }

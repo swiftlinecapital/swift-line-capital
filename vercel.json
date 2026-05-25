@@ -189,6 +189,11 @@
       "source": "/brett-zoom",
       "destination": "https://us06web.zoom.us/j/3895990140",
       "permanent": false
+    },
+    {
+      "source": "/sabrina-zoom",
+      "destination": "https://us06web.zoom.us/j/86245443768",
+      "permanent": false
     }
   ]
 }

@@ -1,8 +1,43 @@
 {
   "redirects": [
     {
-      "source": "/real-estate-loans/heloc",
-      "destination": "/heloc/",
+      "source": "/real-estate-loans/fix-and-flip/",
+      "destination": "/fix-and-flip/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/fix-and-flip",
+      "destination": "/fix-and-flip/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/ground-up-construction/",
+      "destination": "/ground-up-construction/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/ground-up-construction",
+      "destination": "/ground-up-construction/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/rehab-loans/",
+      "destination": "/rehab/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/rehab-loans",
+      "destination": "/rehab/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/dscr-loans/",
+      "destination": "/dscr/",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate-loans/dscr-loans",
+      "destination": "/dscr/",
       "permanent": true
     },
     {
@@ -11,58 +46,118 @@
       "permanent": true
     },
     {
-      "source": "/0percent",
-      "destination": "/credit-card-stacking/",
-      "permanent": false
+      "source": "/real-estate-loans/heloc",
+      "destination": "/heloc/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/line-of-credit/",
+      "destination": "/bloc/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/line-of-credit",
+      "destination": "/bloc/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/term-loans/",
+      "destination": "/term-loan/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/term-loans",
+      "destination": "/term-loan/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/sba-loans/",
+      "destination": "/sba/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/sba-loans",
+      "destination": "/sba/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/mca/",
+      "destination": "/mca/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/mca",
+      "destination": "/mca/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/equipment-financing/",
+      "destination": "/equipment-loan/",
+      "permanent": true
+    },
+    {
+      "source": "/business-loans/equipment-financing",
+      "destination": "/equipment-loan/",
+      "permanent": true
+    },
+    {
+      "source": "/credit-card-stacking/",
+      "destination": "/0percent/",
+      "permanent": true
+    },
+    {
+      "source": "/credit-card-stacking",
+      "destination": "/0percent/",
+      "permanent": true
     },
     {
       "source": "/0",
-      "destination": "/credit-card-stacking/",
+      "destination": "/0percent/",
       "permanent": false
     },
     {
       "source": "/fixandflip",
-      "destination": "/real-estate-loans/fix-and-flip/",
+      "destination": "/fix-and-flip/",
       "permanent": false
     },
     {
       "source": "/groundup",
-      "destination": "/real-estate-loans/ground-up-construction/",
+      "destination": "/ground-up-construction/",
       "permanent": false
     },
     {
       "source": "/rehab",
-      "destination": "/real-estate-loans/rehab-loans/",
+      "destination": "/rehab/",
       "permanent": false
     },
     {
       "source": "/dscr",
-      "destination": "/real-estate-loans/dscr-loans/",
+      "destination": "/dscr/",
       "permanent": false
     },
     {
       "source": "/bloc",
-      "destination": "/business-loans/line-of-credit/",
+      "destination": "/bloc/",
       "permanent": false
     },
     {
       "source": "/termloan",
-      "destination": "/business-loans/term-loans/",
+      "destination": "/term-loan/",
       "permanent": false
     },
     {
       "source": "/sba",
-      "destination": "/business-loans/sba-loans/",
+      "destination": "/sba/",
       "permanent": false
     },
     {
       "source": "/mca",
-      "destination": "/business-loans/mca/",
+      "destination": "/mca/",
       "permanent": false
     },
     {
       "source": "/equipment",
-      "destination": "/business-loans/equipment-financing/",
+      "destination": "/equipment-loan/",
       "permanent": false
     },
     {

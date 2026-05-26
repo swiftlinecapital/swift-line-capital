@@ -209,6 +209,16 @@
       "source": "/results-driven",
       "destination": "https://apply.swiftlinecapital.com/resultsdriven",
       "permanent": false
+    },
+    {
+      "source": "/accruity",
+      "destination": "https://apply.swiftlinecapital.com/accruity",
+      "permanent": false
+    },
+    {
+      "source": "/padsplit",
+      "destination": "https://apply.swiftlinecapital.com/padsplit",
+      "permanent": false
     }
   ]
 }

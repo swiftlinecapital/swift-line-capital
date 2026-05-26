@@ -194,6 +194,21 @@
       "source": "/sabrina-zoom",
       "destination": "https://us06web.zoom.us/j/86245443768",
       "permanent": false
+    },
+    {
+      "source": "/result-driven",
+      "destination": "https://apply.swiftlinecapital.com/resultsdriven",
+      "permanent": false
+    },
+    {
+      "source": "/resultsdriven",
+      "destination": "https://apply.swiftlinecapital.com/resultsdriven",
+      "permanent": false
+    },
+    {
+      "source": "/results-driven",
+      "destination": "https://apply.swiftlinecapital.com/resultsdriven",
+      "permanent": false
     }
   ]
 }

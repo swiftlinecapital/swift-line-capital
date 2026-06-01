@@ -222,7 +222,17 @@
     },
     {
       "source": "/brett-schedule",
-      "destination": "/brett-schedule/",
+      "destination": "/brett/",
+      "permanent": true
+    },
+    {
+      "source": "/brett-schedule/",
+      "destination": "/brett/",
+      "permanent": true
+    },
+    {
+      "source": "/brett",
+      "destination": "/brett/",
       "permanent": false
     }
   ]

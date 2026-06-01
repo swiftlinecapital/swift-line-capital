@@ -219,6 +219,11 @@
       "source": "/padsplit",
       "destination": "https://apply.swiftlinecapital.com/padsplit",
       "permanent": false
+    },
+    {
+      "source": "/brett-schedule",
+      "destination": "/brett-schedule/",
+      "permanent": false
     }
   ]
 }

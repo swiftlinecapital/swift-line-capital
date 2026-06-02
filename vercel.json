@@ -239,6 +239,11 @@
       "source": "/brett-support",
       "destination": "/brett-support/",
       "permanent": false
+    },
+    {
+      "source": "/sabrina",
+      "destination": "/sabrina/",
+      "permanent": false
     }
   ]
 }

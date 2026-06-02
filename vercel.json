@@ -254,6 +254,11 @@
       "source": "/fund",
       "destination": "/fund/",
       "permanent": false
+    },
+    {
+      "source": "/schedule-onboarding",
+      "destination": "/schedule-onboarding/",
+      "permanent": false
     }
   ]
 }

@@ -262,7 +262,17 @@
     },
     {
       "source": "/creditrepair",
-      "destination": "/creditrepair/",
+      "destination": "/removals/",
+      "permanent": true
+    },
+    {
+      "source": "/creditrepair/",
+      "destination": "/removals/",
+      "permanent": true
+    },
+    {
+      "source": "/removals",
+      "destination": "/removals/",
       "permanent": false
     }
   ]

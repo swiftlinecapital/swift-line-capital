@@ -274,6 +274,11 @@
       "source": "/removals",
       "destination": "/removals/",
       "permanent": false
+    },
+    {
+      "source": "/onboarding-form",
+      "destination": "/onboarding-form/",
+      "permanent": false
     }
   ]
 }

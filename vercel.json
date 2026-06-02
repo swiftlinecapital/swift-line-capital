@@ -259,6 +259,11 @@
       "source": "/schedule-onboarding",
       "destination": "/schedule-onboarding/",
       "permanent": false
+    },
+    {
+      "source": "/creditrepair",
+      "destination": "/creditrepair/",
+      "permanent": false
     }
   ]
 }

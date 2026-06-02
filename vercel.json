@@ -244,6 +244,11 @@
       "source": "/sabrina",
       "destination": "/sabrina/",
       "permanent": false
+    },
+    {
+      "source": "/jv",
+      "destination": "/jv/",
+      "permanent": false
     }
   ]
 }

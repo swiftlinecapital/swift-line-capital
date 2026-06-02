@@ -249,6 +249,11 @@
       "source": "/jv",
       "destination": "/jv/",
       "permanent": false
+    },
+    {
+      "source": "/fund",
+      "destination": "/fund/",
+      "permanent": false
     }
   ]
 }

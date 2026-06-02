@@ -234,6 +234,11 @@
       "source": "/brett",
       "destination": "/brett/",
       "permanent": false
+    },
+    {
+      "source": "/brett-support",
+      "destination": "/brett-support/",
+      "permanent": false
     }
   ]
 }

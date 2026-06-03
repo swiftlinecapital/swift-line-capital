@@ -1,3 +1,11 @@
+// Universal tracking
+(function() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = "https://t.swiftlinecapital.com/v1/lst/universal-script?ph=c08ff61b2a7d38f14e311673db27ec88dbf29cb1a7950e5334b8feb18bbf6394&tag=!clicked&ref_url=" + encodeURIComponent(document.URL);
+  document.head.appendChild(script);
+})();
+
 // Mobile menu toggle
 const toggle = document.querySelector('.menu-toggle');
 const navUl = document.querySelector('nav ul');

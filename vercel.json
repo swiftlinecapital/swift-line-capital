@@ -279,6 +279,11 @@
       "source": "/onboarding-form",
       "destination": "/onboarding-form/",
       "permanent": false
+    },
+    {
+      "source": "/learn-more",
+      "destination": "/learn-more/",
+      "permanent": false
     }
   ]
 }

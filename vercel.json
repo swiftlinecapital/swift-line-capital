@@ -289,6 +289,11 @@
       "source": "/ourprocess",
       "destination": "/ourprocess/",
       "permanent": true
+    },
+    {
+      "source": "/refer",
+      "destination": "/refer/",
+      "permanent": true
     }
   ]
 }

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refer a Client | Swift Line Capital</title>
+  <meta name="description" content="Partner with Swift Line Capital. Refer clients to our 0% interest credit stacking program and earn 25% referral fees, or join our white label program for a 50/50 split.">
+  <link rel="canonical" href="https://www.swiftlinecapital.com/refer/">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    /* HERO */
+    .refer-hero {
+      background: var(--navy);
+      padding: 5rem 1.5rem 4.5rem;
+      color: var(--white);
+      text-align: center;
+    }
+    .refer-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      color: var(--white);
+      margin: 0 0 .5rem;
+      line-height: 1.15;
+    }
+    .refer-hero h1 span { color: var(--green); }
+    .refer-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.8);
+      max-width: 600px;
+      margin: 1.25rem auto 0;
+      line-height: 1.75;
+    }
+
+    /* PARTNERSHIP OPTIONS */
+    .partner-section {
+      padding: 5rem 1.5rem;
+      background: var(--off-white);
+    }
+    .partner-section .section-center {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .partner-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .partner-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2.25rem 2rem;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .partner-card.featured {
+      border: 2px solid var(--green);
+      box-shadow: 0 8px 32px rgba(77,184,72,.12);
+    }
+    .most-popular-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--green);
+      color: var(--white);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .3rem 1.1rem;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .partner-card-icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .partner-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.45rem;
+      color: var(--navy);
+      margin: 0 0 .5rem;
+    }
+    .partner-card .earn-label {
+      display: inline-block;
+      background: rgba(77,184,72,.12);
+      color: var(--green);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .partner-card p {
+      color: var(--text-mid);
+      font-size: .97rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+    .partner-card-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid var(--border);
+      padding-top: 1.1rem;
+    }
+    .partner-card-details li {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: .5rem 0;
+      font-size: .92rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .partner-card-details li:last-child { border-bottom: none; }
+    .partner-card-details .detail-label { color: var(--text-mid); }
+    .partner-card-details .detail-val { color: var(--navy); font-weight: 600; text-align: right; max-width: 55%; }
+    .partner-cta-wrap { text-align: center; margin-top: 2.75rem; }
+
+    /* HOW IT WORKS */
+    .how-section { padding: 5rem 1.5rem; }
+    .how-section .section-center { max-width: 960px; margin: 0 auto; }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .how-step { text-align: center; }
+    .how-step-num {
+      width: 44px;
+      height: 44px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 50%;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.1rem;
+    }
+    .how-step h4 {
+      font-family: 'Poppins', sans-serif;
+      color: var(--navy);
+      font-size: 1.05rem;
+      margin: 0 0 .6rem;
+    }
+    .how-step p { color: var(--text-mid); font-size: .93rem; line-height: 1.65; }
+
+    /* WHAT WE FUND */
+    .fund-section {
+      padding: 5rem 1.5rem;
+      background: var(--off-white);
+    }
+    .fund-section .section-center { max-width: 960px; margin: 0 auto; }
+    .fund-section .fund-intro {
+      color: var(--text-mid);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      max-width: 720px;
+      margin: 1.25rem auto 2.5rem;
+      text-align: center;
+    }
+    .stat-boxes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .stat-box {
+      background: var(--navy);
+      border-radius: 14px;
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .stat-box .stat-val {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--green);
+      display: block;
+      margin-bottom: .4rem;
+    }
+    .stat-box .stat-desc { font-size: .92rem; color: rgba(255,255,255,.75); line-height: 1.4; }
+
+    /* FORM SECTION */
+    .form-section { padding: 5rem 1.5rem; }
+    .form-section .section-center { max-width: 860px; margin: 0 auto; }
+    .form-wrap { min-height: 1800px; margin-top: 2.5rem; }
+    .form-wrap iframe { width: 100%; height: 100%; border: none; border-radius: 3px; }
+
+    /* BOTTOM CTA */
+    .bottom-cta {
+      background: var(--navy);
+      padding: 5rem 1.5rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .bottom-cta h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.75rem, 4vw, 2.4rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .bottom-cta h2 span { color: var(--green); }
+    .bottom-cta p { color: rgba(255,255,255,.75); font-size: 1.05rem; max-width: 520px; margin: 0 auto 2rem; }
+    .bottom-cta .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .partner-cards { grid-template-columns: 1fr; }
+      .how-steps { grid-template-columns: 1fr; }
+      .stat-boxes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>&#128222; Fast Funding Available &mdash; Call / Text Now: <a href="tel:8036536293">803-653-6293</a></span>
+  <div class="top-bar-social">
+    <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo"><img src="../assets/images/swipe-logo.png" alt="Swift Line Capital"></a>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li class="dropdown">
+        <a href="/#real-estate-loans">Real Estate Loans &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+          <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+          <li><a href="/rehab/">Rehab Loans</a></li>
+          <li><a href="/dscr/">DSCR Loans</a></li>
+          <li><a href="/heloc/">HELOC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/#business-loans">Business Loans &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="/bloc/">Line of Credit</a></li>
+          <li><a href="/term-loan/">Term Loans</a></li>
+          <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+          <li><a href="/mca/">Merchant Cash Advance</a></li>
+          <li><a href="/equipment-loan/">Equipment Financing</a></li>
+        </ul>
+      </li>
+      <li><a href="/0percent/">0% Credit Stacking</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/contact/" class="nav-cta">Apply Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- SECTION 1: HERO -->
+<section class="refer-hero">
+  <h1>Let's Get Your Clients Funded<br><span>and Get You Paid</span></h1>
+  <p>Partner with Swift Line Capital and start earning referral income. We have two partnership options designed to fit how you work.</p>
+</section>
+
+<!-- SECTION 2: TWO PARTNERSHIP OPTIONS -->
+<section class="partner-section">
+  <div class="section-center">
+    <div class="text-center">
+      <div class="section-label">Partnership Models</div>
+      <h2 class="section-title">Choose Your Partnership Model</h2>
+    </div>
+    <div class="partner-cards">
+
+      <!-- Option 1: Referral Program -->
+      <div class="partner-card">
+        <div class="partner-card-icon">&#129309;</div>
+        <h3>Referral Program</h3>
+        <span class="earn-label">Earn 25% Referral Fee</span>
+        <p>Simply refer the client to us. We handle everything - the call, the explanation, the sale, profile optimization, credit report gathering, and the entire fulfillment. All you do is make the intro and collect your referral fee.</p>
+        <ul class="partner-card-details">
+          <li>
+            <span class="detail-label">What you do</span>
+            <span class="detail-val">Make the introduction</span>
+          </li>
+          <li>
+            <span class="detail-label">What we do</span>
+            <span class="detail-val">Everything else</span>
+          </li>
+          <li>
+            <span class="detail-label">Your cut</span>
+            <span class="detail-val">25% referral fee</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Option 2: White Label Program -->
+      <div class="partner-card featured">
+        <span class="most-popular-badge">Most Popular</span>
+        <div class="partner-card-icon">&#127970;</div>
+        <h3>White Label Program</h3>
+        <span class="earn-label">Earn 50/50 Split</span>
+        <p>You analyze the client's credit report to confirm they are a good fit, sell them on the program, and get them to sign an agreement. Once they are signed up, we handle 100% of the fulfillment - and split everything 50/50.</p>
+        <ul class="partner-card-details">
+          <li>
+            <span class="detail-label">What you do</span>
+            <span class="detail-val">Qualify, sell, and sign the client</span>
+          </li>
+          <li>
+            <span class="detail-label">What we do</span>
+            <span class="detail-val">All fulfillment</span>
+          </li>
+          <li>
+            <span class="detail-label">Your cut</span>
+            <span class="detail-val">50% of revenue</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="partner-cta-wrap">
+      <a href="sms:8036536293" class="btn btn-green btn-lg">&#128172; Text Us to Get Started as a Partner</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: HOW IT WORKS -->
+<section class="how-section">
+  <div class="section-center">
+    <div class="text-center">
+      <div class="section-label">The Referral Process</div>
+      <h2 class="section-title">Have a Client Ready to Get Funded?</h2>
+      <p style="color:var(--text-mid);font-size:1.05rem;max-width:620px;margin:.75rem auto 0;">Here's how the process works once you have a client.</p>
+    </div>
+    <div class="how-steps">
+
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <h4>Submit the Referral Form</h4>
+        <p>Fill out the form at the bottom of this page with everything we need to contact your client and enroll them in our 0% interest credit card stacking program.</p>
+      </div>
+
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <h4>We Contact and Onboard Your Client</h4>
+        <p>We reach out to the client and have them complete an onboarding form. This gives us everything we need to start their funding process - their goals, business needs, credit situation, and more.</p>
+      </div>
+
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <h4>Strategy Call and Funding</h4>
+        <p>We schedule a 1-on-1 onboarding call with your client to walk them through the process, review their onboarding form, and build a personalized funding strategy. Once their profile is ready, we start the application process to get them funded - and get you paid.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: WHAT WE FUND -->
+<section class="fund-section">
+  <div class="section-center text-center">
+    <div class="section-label">The Program</div>
+    <h2 class="section-title">What We're Funding</h2>
+    <p class="fund-intro">We specialize in 0% interest credit card stacking - helping business owners and real estate investors access $50,000 to $200,000 in revolving business credit at 0% interest for 12-18 months. No collateral. No hard pull to apply. Clients use this capital for business growth, down payments, rehab costs, and more.</p>
+    <div class="stat-boxes">
+      <div class="stat-box">
+        <span class="stat-val">$200,000</span>
+        <span class="stat-desc">Maximum funding available</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-val">0% Interest</span>
+        <span class="stat-desc">For 12-18 months</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-val">2-4 Weeks</span>
+        <span class="stat-desc">Typical time to fund</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: REFERRAL FORM -->
+<section class="form-section">
+  <div class="section-center">
+    <div class="text-center">
+      <div class="section-label">Refer a Client</div>
+      <h2 class="section-title">Submit a Client Referral</h2>
+      <p style="color:var(--text-mid);font-size:1.05rem;margin-top:.75rem;">Fill out the form below and we'll take it from here.</p>
+    </div>
+    <div class="form-wrap">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/xMoMikoRvvKJ3sURYnFA"
+        style="width:100%;height:100%;border:none;border-radius:3px"
+        id="inline-xMoMikoRvvKJ3sURYnFA"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="WL Partner - New Client Intake Form"
+        data-height="1732"
+        data-layout-iframe-id="inline-xMoMikoRvvKJ3sURYnFA"
+        data-form-id="xMoMikoRvvKJ3sURYnFA"
+        title="WL Partner - New Client Intake Form">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: BOTTOM CTA -->
+<section class="bottom-cta">
+  <h2>Ready to Start <span>Earning?</span></h2>
+  <p>Text us or schedule a call to discuss which partnership model is right for you.</p>
+  <div class="btn-group">
+    <a href="sms:8036536293" class="btn btn-green btn-lg">&#128241; Text Us: 803-653-6293</a>
+    <a href="https://apply.swiftlinecapital.com/book" class="btn btn-outline-white btn-lg">&#128197; Schedule a Call</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/"><img src="../assets/images/swipe-white.png" alt="Swift Line Capital"></a>
+      <p>Fast funding for real estate investors and business owners across all 50 states.</p>
+      <div class="footer-contact-info" style="margin:1rem 0;font-size:.88rem;line-height:2;">
+        <div>&#128222; <a href="tel:8036536293" style="color:rgba(255,255,255,.75);text-decoration:none;">803-653-6293</a></div>
+        <div>&#9993;&#65039; <a href="mailto:support@swiftlinecapital.com" style="color:rgba(255,255,255,.75);text-decoration:none;">support@swiftlinecapital.com</a></div>
+        <div style="color:rgba(255,255,255,.6);">&#128336; Mon-Fri 9AM-6PM ET</div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Real Estate Loans</h4>
+      <ul>
+        <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+        <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+        <li><a href="/rehab/">Rehab Loans</a></li>
+        <li><a href="/dscr/">DSCR Loans</a></li>
+        <li><a href="/heloc/">HELOC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Business Loans</h4>
+      <ul>
+        <li><a href="/0percent/">0% Credit Stacking</a></li>
+        <li><a href="/bloc/">Line of Credit</a></li>
+        <li><a href="/term-loan/">Term Loans</a></li>
+        <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+        <li><a href="/mca/">Merchant Cash Advance</a></li>
+        <li><a href="/equipment-loan/">Equipment Financing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/partners/">Become a Partner</a></li>
+        <li><a href="/blog/">Blogs &amp; Resources</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/disclosure-statement/">Disclosure Statement</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Swift Line Capital. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-of-use/">Terms of Use</a>
+      <a href="/disclosure-statement/">Disclosures</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+</body>
+</html>

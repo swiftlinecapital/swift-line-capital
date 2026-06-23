@@ -284,6 +284,11 @@
       "source": "/learn-more",
       "destination": "/learn-more/",
       "permanent": false
+    },
+    {
+      "source": "/ourprocess",
+      "destination": "/ourprocess/",
+      "permanent": true
     }
   ]
 }

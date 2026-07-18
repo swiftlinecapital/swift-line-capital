@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Swift Line Capital</title>
+  <meta name="description" content="Join the Swift Line Capital team. We're a fast-moving private lending brokerage in Charlotte, NC looking for driven, detail-oriented people to grow with us.">
+  <link rel="canonical" href="https://www.swiftlinecapital.com/careers/">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .car-hero {
+      background: var(--navy);
+      padding: 6rem 1.5rem 5rem;
+      color: var(--white);
+      text-align: center;
+    }
+    .car-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.1rem, 5vw, 3.2rem);
+      color: var(--white);
+      margin: .5rem 0 1.25rem;
+      line-height: 1.2;
+    }
+    .car-hero h1 span { color: var(--green); }
+    .car-hero .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,.78);
+      max-width: 700px;
+      margin: 0 auto 2.25rem;
+      line-height: 1.75;
+    }
+    .car-section { padding: 5rem 1.5rem; }
+    .car-section.alt { background: var(--off-white, #f7f8fa); }
+    .car-section.navy-bg { background: var(--navy); color: var(--white); }
+    .car-inner { max-width: 1080px; margin: 0 auto; }
+    .car-label {
+      font-size: .8rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--green); margin-bottom: .6rem;
+    }
+    .car-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      color: var(--navy); margin-bottom: 1rem; line-height: 1.25;
+    }
+    .car-title.white { color: var(--white); }
+    .car-title span { color: var(--green); }
+    .car-subtitle {
+      font-size: 1.05rem; color: var(--text-mid, #555);
+      line-height: 1.7; max-width: 680px;
+    }
+    .text-center { text-align: center; }
+    .text-center .car-subtitle { margin: 0 auto; }
+
+    /* About blurb */
+    .about-blurb {
+      max-width: 820px; margin: 2rem auto 0;
+      font-size: 1.05rem; color: var(--text-mid, #555);
+      line-height: 1.8;
+    }
+
+    /* Values cards */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem; margin-top: 3rem;
+    }
+    .value-card {
+      background: var(--white, #fff);
+      border-radius: 16px; padding: 2rem 1.5rem;
+      box-shadow: 0 2px 16px rgba(43,50,82,.07);
+      border-top: 4px solid var(--green);
+    }
+    .value-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .value-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem; color: var(--navy); margin-bottom: .6rem;
+    }
+    .value-card p {
+      font-size: .93rem; color: var(--text-mid, #555); line-height: 1.65;
+    }
+
+    /* Job card */
+    .jobs-grid { margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .job-card {
+      background: var(--white, #fff);
+      border-radius: 16px; padding: 2rem 2.5rem;
+      box-shadow: 0 2px 18px rgba(43,50,82,.08);
+      border-left: 5px solid var(--green);
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+    }
+    .job-card-body { flex: 1; min-width: 260px; }
+    .job-card-body h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem; color: var(--navy); margin-bottom: .75rem;
+    }
+    .job-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+    .job-tag {
+      background: rgba(77,184,72,.12); color: #2a8c27;
+      font-size: .78rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; padding: .3rem .8rem; border-radius: 50px;
+    }
+    .job-card-body p {
+      font-size: .97rem; color: var(--text-mid, #555); line-height: 1.7;
+    }
+    .job-card-cta { flex-shrink: 0; align-self: center; }
+
+    /* Footer CTA */
+    .footer-cta-note {
+      text-align: center; margin-top: 3rem;
+      font-size: 1rem; color: rgba(255,255,255,.75);
+    }
+    .footer-cta-note a { color: var(--green); text-decoration: none; }
+    .footer-cta-note a:hover { text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .values-grid { grid-template-columns: 1fr 1fr; }
+      .job-card { flex-direction: column; }
+      .job-card-cta { align-self: flex-start; }
+    }
+    @media (max-width: 600px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>📞 Fast Funding Available — Call / Text Now: <a href="tel:8036536293">803-653-6293</a></span>
+  <div class="top-bar-social">
+    <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo"><img src="../assets/images/swipe-logo.png" alt="Swift Line Capital"></a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li class="dropdown">
+        <a href="/#real-estate-loans">Real Estate Loans ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+          <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+          <li><a href="/rehab/">Rehab Loans</a></li>
+          <li><a href="/dscr/">DSCR Loans</a></li>
+          <li><a href="/heloc/">HELOC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/#business-loans">Business Loans ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/bloc/">Line of Credit</a></li>
+          <li><a href="/term-loan/">Term Loans</a></li>
+          <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+          <li><a href="/mca/">Merchant Cash Advance</a></li>
+          <li><a href="/equipment-loan/">Equipment Financing</a></li>
+        </ul>
+      </li>
+      <li><a href="/0percent/">0% Credit Stacking</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/contact/" class="nav-cta">Apply Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="car-hero">
+  <div class="car-inner">
+    <div class="car-label">Now Hiring</div>
+    <h1>Join the <span>Swift Line Capital</span> Team</h1>
+    <p class="hero-sub">We move fast, close deals, and take care of our people. If you're driven, detail-oriented, and ready to grow — we want to hear from you.</p>
+    <a href="#open-roles" class="btn btn-green btn-lg">See Open Roles</a>
+  </div>
+</section>
+
+<!-- ABOUT THE COMPANY -->
+<section class="car-section">
+  <div class="car-inner">
+    <div class="car-label">About Us</div>
+    <h2 class="car-title">Who We Are</h2>
+    <div class="about-blurb">
+      <p>Swift Line Capital is a Charlotte, NC-based private lending brokerage helping real estate investors and business owners access capital fast. We specialize in hard money loans, fix-and-flip financing, DSCR rentals, ground-up construction, bridge loans, and business credit solutions.</p>
+      <p>We're a lean, high-performance team that values execution, communication, and integrity. Every person on our team owns their work, communicates clearly, and moves with urgency. If that sounds like you, you'll fit right in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE LOOK FOR -->
+<section class="car-section alt">
+  <div class="car-inner">
+    <div class="text-center">
+      <div class="car-label">Culture</div>
+      <h2 class="car-title">What We Look For in Candidates</h2>
+      <p class="car-subtitle">We hire for character first and skills second. Here's what defines our team.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">📋</div>
+        <h3>Obsessive Organization</h3>
+        <p>You track every detail, every open item, and nothing falls through. You live by your checklists and your systems are airtight.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📣</div>
+        <h3>Proactive Communication</h3>
+        <p>You reach out; you don't wait. Clear, professional, and prompt — you keep every stakeholder informed before they have to ask.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <h3>Ownership Mentality</h3>
+        <p>You take responsibility for your work and drive things to completion. No passing the buck, no waiting to be told — you just handle it.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🚀</div>
+        <h3>Growth Mindset</h3>
+        <p>We're growing fast and we want people who grow with us. You're curious, adaptable, and always looking for a better way to do things.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN ROLES -->
+<section class="car-section" id="open-roles">
+  <div class="car-inner">
+    <div class="text-center">
+      <div class="car-label">Open Positions</div>
+      <h2 class="car-title">Open Roles</h2>
+      <p class="car-subtitle">We're actively hiring for the following positions. Click to learn more and apply.</p>
+    </div>
+    <div class="jobs-grid">
+      <div class="job-card">
+        <div class="job-card-body">
+          <h3>Loan Processing Coordinator</h3>
+          <div class="job-tags">
+            <span class="job-tag">Remote</span>
+            <span class="job-tag">Full-Time or Part-Time</span>
+            <span class="job-tag">Immediate Opening</span>
+          </div>
+          <p>Own the post-approval phase of every real estate transaction. You'll be the hub between borrowers and lenders — tracking conditions, chasing documents, and keeping deals on track to close.</p>
+        </div>
+        <div class="job-card-cta">
+          <a href="/careers/loan-processing-coordinator/" class="btn btn-green">View Role →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="car-section navy-bg">
+  <div class="car-inner text-center">
+    <h2 class="car-title white">Don't See a Role That Fits?</h2>
+    <p class="footer-cta-note">Send your resume to <a href="mailto:brett@swiftlinecapital.com">brett@swiftlinecapital.com</a> — we're always looking for great people.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/"><img src="../assets/images/swipe-white.png" alt="Swift Line Capital"></a>
+      <p>Fast funding for real estate investors and business owners across all 50 states.</p>
+      <div class="footer-contact-info" style="margin:1rem 0;font-size:.88rem;line-height:2;">
+        <div>📞 <a href="tel:8036536293" style="color:rgba(255,255,255,.75);text-decoration:none;">803-653-6293</a></div>
+        <div>✉️ <a href="mailto:support@swiftlinecapital.com" style="color:rgba(255,255,255,.75);text-decoration:none;">support@swiftlinecapital.com</a></div>
+        <div style="color:rgba(255,255,255,.6);">🕐 Mon-Fri 9AM-6PM ET</div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Real Estate Loans</h4>
+      <ul>
+        <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+        <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+        <li><a href="/rehab/">Rehab Loans</a></li>
+        <li><a href="/dscr/">DSCR Loans</a></li>
+        <li><a href="/heloc/">HELOC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Business Loans</h4>
+      <ul>
+        <li><a href="/0percent/">0% Credit Stacking</a></li>
+        <li><a href="/bloc/">Line of Credit</a></li>
+        <li><a href="/term-loan/">Term Loans</a></li>
+        <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+        <li><a href="/mca/">Merchant Cash Advance</a></li>
+        <li><a href="/equipment-loan/">Equipment Financing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/partners/">Become a Partner</a></li>
+        <li><a href="/blog/">Blogs &amp; Resources</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+        <li><a href="/careers/" style="color:var(--green);font-weight:600;">We're Hiring</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/disclosure-statement/">Disclosure Statement</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Swift Line Capital. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-of-use/">Terms of Use</a>
+      <a href="/disclosure-statement/">Disclosures</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+  // Smooth scroll for hero CTA
+  document.querySelector('a[href="#open-roles"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('open-roles').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>

@@ -294,6 +294,16 @@
       "source": "/refer",
       "destination": "/refer/",
       "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/careers/",
+      "permanent": true
+    },
+    {
+      "source": "/careers/loan-processing-coordinator",
+      "destination": "/careers/loan-processing-coordinator/",
+      "permanent": true
     }
   ]
 }

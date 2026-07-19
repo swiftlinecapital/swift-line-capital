@@ -304,6 +304,16 @@
       "source": "/careers/loan-processing-coordinator",
       "destination": "/careers/loan-processing-coordinator/",
       "permanent": true
+    },
+    {
+      "source": "/loan-coordinator",
+      "destination": "/careers/loan-processing-coordinator/",
+      "permanent": true
+    },
+    {
+      "source": "/loan-coordinator/",
+      "destination": "/careers/loan-processing-coordinator/",
+      "permanent": true
     }
   ]
 }

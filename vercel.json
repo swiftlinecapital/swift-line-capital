@@ -314,6 +314,11 @@
       "source": "/loan-coordinator/",
       "destination": "/careers/loan-processing-coordinator/",
       "permanent": true
+    },
+    {
+      "source": "/schedule-interview",
+      "destination": "/schedule-interview/",
+      "permanent": true
     }
   ]
 }

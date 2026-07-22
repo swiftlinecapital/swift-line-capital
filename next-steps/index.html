@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Steps | Swift Line Capital</title>
+  <meta name="description" content="Learn how Swift Line Capital engineers creative funding strategies to get real estate investors and business owners to 100% financing.">
+  <link rel="canonical" href="https://www.swiftlinecapital.com/next-steps/">
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    /* ===== HERO ===== */
+    .op-hero {
+      background: var(--navy);
+      padding: 6rem 1.5rem 5rem;
+      color: var(--white);
+      text-align: center;
+    }
+    .op-hero .breadcrumb {
+      font-size: .85rem;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 1.25rem;
+    }
+    .op-hero .breadcrumb a {
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+    }
+    .op-hero .breadcrumb a:hover { color: var(--green); }
+    .op-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.1rem, 5vw, 3.2rem);
+      color: var(--white);
+      margin: .5rem 0 1.25rem;
+      line-height: 1.2;
+    }
+    .op-hero h1 span { color: var(--green); }
+    .op-hero .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,.78);
+      max-width: 700px;
+      margin: 0 auto 2.25rem;
+      line-height: 1.75;
+    }
+    .op-hero .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ===== SECTION UTILITIES ===== */
+    .op-section {
+      padding: 5rem 1.5rem;
+    }
+    .op-section.alt {
+      background: var(--off-white, #f7f8fa);
+    }
+    .op-section.navy-bg {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .op-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .op-label {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: .6rem;
+    }
+    .op-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      color: var(--navy);
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+    .op-title span { color: var(--green); }
+    .op-title.white { color: var(--white); }
+    .op-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-mid, #555);
+      line-height: 1.7;
+      max-width: 680px;
+    }
+    .text-center { text-align: center; }
+    .text-center .op-subtitle { margin: 0 auto; }
+
+    /* ===== INTRO ===== */
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    .intro-grid p {
+      font-size: 1.05rem;
+      color: var(--text-mid, #555);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .intro-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1.5rem;
+    }
+    .badge {
+      background: var(--white, #fff);
+      border: 2px solid var(--green);
+      border-radius: 50px;
+      padding: .45rem 1.1rem;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .intro-stat-box {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 2.5rem;
+      color: var(--white);
+    }
+    .intro-stat-box h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 1.5rem;
+    }
+    .stat-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .85rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-icon {
+      width: 38px;
+      height: 38px;
+      background: rgba(77,184,72,.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .stat-text strong {
+      display: block;
+      color: var(--white);
+      font-size: .95rem;
+      font-weight: 700;
+    }
+    .stat-text span {
+      font-size: .83rem;
+      color: rgba(255,255,255,.58);
+    }
+
+    /* ===== PROCESS STEPS ===== */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .step-card {
+      background: var(--white, #fff);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 2px 16px rgba(43,50,82,.07);
+      border-top: 4px solid var(--green);
+      position: relative;
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 50%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 1.1rem;
+    }
+    .step-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: .6rem;
+    }
+    .step-card p {
+      font-size: .93rem;
+      color: var(--text-mid, #555);
+      line-height: 1.65;
+    }
+
+    /* ===== 100% FINANCING ===== */
+    .financing-intro {
+      text-align: center;
+      margin-bottom: 2.75rem;
+    }
+    .financing-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .fin-card {
+      background: var(--white, #fff);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 2px 18px rgba(43,50,82,.08);
+      border-left: 5px solid var(--green);
+    }
+    .fin-card-label {
+      display: inline-block;
+      background: rgba(77,184,72,.12);
+      color: #2a8c27;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      padding: .3rem .8rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+    .fin-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: .75rem;
+    }
+    .fin-card p {
+      font-size: .93rem;
+      color: var(--text-mid, #555);
+      line-height: 1.65;
+    }
+    .financing-note {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 1rem;
+      color: var(--text-mid, #555);
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===== PRODUCTS GRID ===== */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 2.75rem;
+    }
+    .product-card {
+      background: var(--white, #fff);
+      border-radius: 12px;
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      text-decoration: none;
+      color: var(--navy);
+      border: 1.5px solid var(--border, #e5e7ef);
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+    }
+    .product-card:hover {
+      border-color: var(--green);
+      box-shadow: 0 4px 18px rgba(77,184,72,.14);
+      transform: translateY(-2px);
+    }
+    .product-card .prod-icon { font-size: 1.6rem; }
+    .product-card .prod-name {
+      font-weight: 700;
+      font-size: .92rem;
+      line-height: 1.3;
+    }
+    .product-card .prod-arrow {
+      font-size: .78rem;
+      color: var(--green);
+      margin-top: .25rem;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .testi-card {
+      background: var(--white, #fff);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 2px 16px rgba(43,50,82,.08);
+      display: flex;
+      flex-direction: column;
+    }
+    .testi-stars {
+      color: #f4b12a;
+      font-size: 1rem;
+      margin-bottom: .85rem;
+      letter-spacing: .05em;
+    }
+    .testi-card blockquote {
+      font-size: .96rem;
+      color: var(--text-mid, #555);
+      line-height: 1.7;
+      margin: 0 0 1.25rem;
+      font-style: italic;
+      flex: 1;
+    }
+    .testi-author strong {
+      display: block;
+      color: var(--navy);
+      font-size: .93rem;
+    }
+    .testi-author span {
+      font-size: .82rem;
+      color: var(--text-mid, #777);
+    }
+    .reviews-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-list {
+      max-width: 820px;
+      margin: 3rem auto 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border, #e5e7ef);
+    }
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.2rem 0;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--navy);
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+    }
+    .faq-question:hover { color: var(--green); }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      transition: background .2s;
+    }
+    .faq-item.open .faq-icon {
+      background: var(--green);
+    }
+    .faq-answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .35s ease, padding .25s ease;
+      font-size: .97rem;
+      color: var(--text-mid, #555);
+      line-height: 1.75;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+      padding-bottom: 1.25rem;
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--white);
+      margin-bottom: .75rem;
+    }
+    .final-cta h2 span { color: var(--green); }
+    .final-cta .cta-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 2.75rem;
+    }
+    .cta-contacts {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-contact-box {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 14px;
+      padding: 1.6rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      transition: background .2s, border-color .2s;
+      min-width: 190px;
+    }
+    .cta-contact-box:hover {
+      background: rgba(77,184,72,.12);
+      border-color: var(--green);
+    }
+    .cta-contact-box .cc-icon { font-size: 1.7rem; margin-bottom: .5rem; }
+    .cta-contact-box .cc-label {
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: rgba(255,255,255,.55);
+      margin-bottom: .35rem;
+    }
+    .cta-contact-box .cc-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .cta-contact-box .cc-value.green { color: var(--green); }
+
+
+    /* ===== VIDEO GRID ===== */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .video-grid { grid-template-columns: 1fr; } }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .financing-cards { grid-template-columns: 1fr 1fr; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .intro-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    @media (max-width: 600px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .financing-cards { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: 1fr 1fr; }
+      .cta-contacts { flex-direction: column; align-items: center; }
+      .cta-contact-box { width: 100%; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>📞 Fast Funding Available — Call / Text Now: <a href="tel:8036536293">803-653-6293</a></span>
+  <div class="top-bar-social">
+    <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo"><img src="../assets/images/swipe-logo.png" alt="Swift Line Capital"></a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li class="dropdown">
+        <a href="/#real-estate-loans">Real Estate Loans ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+          <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+          <li><a href="/rehab/">Rehab Loans</a></li>
+          <li><a href="/dscr/">DSCR Loans</a></li>
+          <li><a href="/heloc/">HELOC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/#business-loans">Business Loans ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="/bloc/">Line of Credit</a></li>
+          <li><a href="/term-loan/">Term Loans</a></li>
+          <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+          <li><a href="/mca/">Merchant Cash Advance</a></li>
+          <li><a href="/equipment-loan/">Equipment Financing</a></li>
+        </ul>
+      </li>
+      <li><a href="/0percent/">0% Credit Stacking</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/contact/" class="nav-cta">Apply Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== SECTION 1: HERO ===== -->
+<section class="op-hero">
+  <div class="op-inner">
+    <div class="breadcrumb"><a href="/">Home</a> / Our Process</div>
+    <div class="section-label" style="color:var(--green);margin-bottom:.75rem;">Thanks for Submitting Your Form</div>
+    <h1>How We Get You to the <span>Closing Table</span></h1>
+    <p class="hero-sub">We don't just find you a loan — we engineer your entire funding strategy so you can acquire, build, and grow without using your own capital.</p>
+    <div class="btn-group">
+      <a href="https://apply.swiftlinecapital.com/book" class="btn btn-green btn-lg">Schedule a Free Consultation</a>
+      <a href="sms:8036536293" class="btn btn-outline-white btn-lg">💬 Text Us Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: INTRO / WHAT WE DO ===== -->
+<section class="op-section">
+  <div class="op-inner">
+    <div class="intro-grid">
+      <div>
+        <div class="op-label">What We Do</div>
+        <h2 class="op-title">What to Expect Next</h2>
+        <p>Now that you've submitted a form describing a bit more about your property, our team will be reviewing everything to put together some term sheets. We offer Fix and Flip loans (up to 100% financing, no experience or credit score required), DSCR loans, Ground Up Construction, Rehab Loans, three HELOC programs as well as a wide variety of working capital loans to help cover gap funding, marketing, working capital and more.</p>
+        <p>Our goal is to engineer the cheapest, most efficient funding solution for your specific project — not just hand you a loan and send you on your way. We stay involved from strategy call through closing.</p>
+        <p>Whether you need a single product or a combination of multiple products to reach 100% financing, we build the plan around your deal, your profile, and your goals.</p>
+        <div class="intro-badges">
+          <span class="badge">Direct Lender</span>
+          <span class="badge">Funding Strategist</span>
+          <span class="badge">All 50 States</span>
+          <span class="badge">Real Estate + Business</span>
+        </div>
+      </div>
+      <div>
+        <div class="intro-stat-box">
+          <h3>Why Clients Choose Us</h3>
+          <div class="stat-row">
+            <div class="stat-icon">💯</div>
+            <div class="stat-text">
+              <strong>100% Financing on Fix and Flips</strong>
+              <span>Based on 70% LTV for new and seasoned investors</span>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-text">
+              <strong>Close in as Fast as 10 Days</strong>
+              <span>Most real estate deals fund in 2-3 weeks</span>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-text">
+              <strong>Creative Gap Funding</strong>
+              <span>We layer products to cover 100% of your deal</span>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon">💳</div>
+            <div class="stat-text">
+              <strong>0% Interest Credit Stacking</strong>
+              <span>Access $50K-$200K in business credit, interest-free</span>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon">🤝</div>
+            <div class="stat-text">
+              <strong>Single Point of Contact</strong>
+              <span>One team handles everything from start to close</span>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon">🏗️</div>
+            <div class="stat-text">
+              <strong>New and Experienced Welcome</strong>
+              <span>We evaluate the deal, not just your resume</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: OUR PROCESS (4 STEPS) ===== -->
+<section class="op-section alt">
+  <div class="op-inner">
+    <div class="text-center">
+      <div class="op-label">Step by Step</div>
+      <h2 class="op-title">Our Process</h2>
+      <p class="op-subtitle">From first conversation to funded deal, here is exactly what to expect when you work with Swift Line Capital.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Free Strategy Call</h3>
+        <p>We learn about your project goals, timeline, credit profile, and what you're trying to accomplish. No pitch, no pressure — just a real conversation about your deal.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Custom Funding Blueprint</h3>
+        <p>We analyze your deal and design a funding strategy — whether that's a single product or a combination of multiple products to get you to 100%. You'll know exactly what you're working with before we move forward.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Submit &amp; Underwrite</h3>
+        <p>We handle the paperwork, submit to the right lender(s), and keep you updated every step of the way. No chasing, no guessing — we stay on it so you don't have to.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Fund &amp; Close</h3>
+        <p>Most real estate loans close in 2-3 weeks. Some as fast as 10 days. You get your money and move on your deal. Simple as that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 4: 100% FINANCING ===== -->
+<section class="op-section">
+  <div class="op-inner">
+    <div class="financing-intro">
+      <div class="op-label">Creative Funding Strategy</div>
+      <h2 class="op-title">Creative Funding = <span>100% Financing</span></h2>
+      <p class="op-subtitle" style="margin:0 auto;">Here's how we stack products to cover every dollar of your deal.</p>
+    </div>
+    <div class="financing-cards">
+      <div class="fin-card">
+        <span class="fin-card-label">Option A</span>
+        <h3>True 100% Fix &amp; Flip Loan</h3>
+        <p>We offer 100% financing on fix and flip deals — covering both the purchase price AND the rehab budget. Based on 70% LTV for new and seasoned investors. No minimum credit score required.</p>
+      </div>
+      <div class="fin-card">
+        <span class="fin-card-label">Option B — Most Popular</span>
+        <h3>Fix &amp; Flip + 0% Credit Stacking</h3>
+        <p>Our most popular gap funding strategy. We help qualified borrowers access $50,000-$200,000 in 0% interest business credit cards (valid for 12-18 months). Use that revolving capital to cover your down payment, rehab overage, or holding costs — interest-free.</p>
+      </div>
+      <div class="fin-card">
+        <span class="fin-card-label">Option C</span>
+        <h3>Fix &amp; Flip + Gap Funding</h3>
+        <p>When a lender covers 80-90% of the deal, we bridge the gap with a secondary product: a business line of credit, personal loan, or working capital facility layered on top to cover your down payment and closing costs.</p>
+      </div>
+    </div>
+    <p class="financing-note">Every deal is different. We look at your project, your profile, and your goals — then find the cheapest path to 100% financing.</p>
+    <div style="text-align:center;margin-top:2rem;">
+      <a href="https://apply.swiftlinecapital.com/book" class="btn btn-green btn-lg">Get Your Custom Strategy</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: PRODUCTS WE OFFER ===== -->
+<section class="op-section alt">
+  <div class="op-inner">
+    <div class="text-center">
+      <div class="op-label">Full Product Menu</div>
+      <h2 class="op-title">Products We Offer</h2>
+      <p class="op-subtitle">We cover real estate investors and business owners with a full suite of funding solutions.</p>
+    </div>
+    <div class="products-grid">
+      <a href="/fix-and-flip/" class="product-card">
+        <div class="prod-icon">🏚️</div>
+        <div class="prod-name">Fix &amp; Flip Loans</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="/ground-up-construction/" class="product-card">
+        <div class="prod-icon">🏗️</div>
+        <div class="prod-name">Ground Up Construction</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="/dscr/" class="product-card">
+        <div class="prod-icon">🏢</div>
+        <div class="prod-name">DSCR Loans</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="/heloc/" class="product-card">
+        <div class="prod-icon">🏡</div>
+        <div class="prod-name">HELOC</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="/rehab/" class="product-card">
+        <div class="prod-icon">🔨</div>
+        <div class="prod-name">Rehab Loans</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="/bloc/" class="product-card">
+        <div class="prod-icon">💼</div>
+        <div class="prod-name">Business Line of Credit</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="/0percent/" class="product-card">
+        <div class="prod-icon">💳</div>
+        <div class="prod-name">0% Credit Stacking</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+      <a href="https://www.swiftlinecapital.com/#business-loans" class="product-card">
+        <div class="prod-icon">🌉</div>
+        <div class="prod-name">SBA Loans / Equipment Loans / &amp; More</div>
+        <div class="prod-arrow">Learn more →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 7: FAQ ===== -->
+<section class="op-section alt">
+  <div class="op-inner">
+    <div class="text-center">
+      <div class="op-label">Got Questions?</div>
+      <h2 class="op-title">Frequently Asked Questions</h2>
+      <p class="op-subtitle">Everything you need to know about working with Swift Line Capital.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Are you a direct lender?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Yes — Swift Line Capital is a direct lender for many of our products. Depending on the deal, we may also leverage relationships with our vetted lending partners to find the best and most affordable option for your specific situation. Either way, we're your single point of contact throughout the process.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What loan products do you offer?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">We offer Fix &amp; Flip loans, Ground Up Construction, DSCR (rental) loans, HELOC, Rehab loans, Hard Money Bridge loans, Business Lines of Credit, SBA loans, Equipment Financing, Merchant Cash Advances, and our flagship 0% Interest Credit Stacking program. We cover both real estate investors and business owners.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer gap funding or second position financing?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Yes. When a primary loan doesn't cover 100% of the deal, we can help bridge the gap through a variety of options — working capital loans, business lines of credit, 0% interest credit stacking, or potentially taking a second position depending on the situation. Our goal is to get you to 100% without you coming out of pocket.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How long does it take to close or receive funding?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Most of our real estate loans fund in 2-3 weeks but can close as quickly as 10 days depending on the lender and complexity. Our digital HELOC (bank statement based, no full doc requirement) can fund in as little as 5 business days. Our 0% interest credit stacking program typically takes 2-4 weeks from start to cards in hand.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is the minimum credit score required?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">It depends on the product. Most real estate loans require a 660+ FICO. We do offer one true asset-based product with no minimum credit score requirement — the deal qualifies on its own merits. Our HELOC accepts scores as low as 600. The 0% Interest Credit Stacking program requires a minimum 720+ FICO score.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is 0% interest credit stacking and how does it work?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Credit stacking is a strategy where we help qualified borrowers apply for multiple business credit cards simultaneously — each with a 0% introductory APR period of 12-18 months. Most clients access $50,000-$200,000 in revolving credit. That capital can be used for down payments, rehab costs, business expenses, or gap funding. After the intro period, you either pay off, refinance, or roll the balances strategically.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need experience for your real estate loans?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">No, we value the deal more than the borrower so we can work with seasoned or brand new investors even to get true 100% financing for our fix and flip and bridge loans. The only one that does require experience would be our ground up construction loans.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What types of properties do you lend on?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">We primarily focus on residential properties with 4 doors or less. We work almost exclusively with non-owner occupied investment properties — so single family residences and 2-4 unit investment properties are our sweet spot. We can also lend in rural areas depending on the lender. We do not lend on commercial or mixed use properties.</div>
+      </div>
+
+
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer revolving lines of credit to use when I need it?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Yes, this is huge in order to have the capital when you need for what you need. We offer a variety of revolving limits ranging from a business line of credit, we have three HELOC programs to get a revolving line of credit leveraging the equity on a primary or investment property, as well as our 0% interest credit stacking (revolving limit up to $200,000 with 0% interest for 12-18 months).</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 6: TESTIMONIALS ===== -->
+<section class="op-section">
+  <div class="op-inner">
+    <div class="text-center">
+      <div class="op-label">Client Stories</div>
+      <h2 class="op-title">Real Deals, Real Results</h2>
+      <p class="op-subtitle">Hear from investors and entrepreneurs who used our funding strategies to close deals and grow their businesses.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+          <iframe src="https://www.youtube.com/embed/a2_xH1iNNr8" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+          <iframe src="https://www.youtube.com/embed/WwMN-cnTsUE" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+          <iframe src="https://www.youtube.com/embed/_1vaVMxEru8" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+          <iframe src="https://www.youtube.com/embed/IIBl2aNbxvs" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+          <iframe src="https://www.youtube.com/embed/BImfb08yE8U" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+          <iframe src="https://www.youtube.com/embed/zBdvXf8HlUk" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-cta">
+      <a href="/reviews/" class="btn btn-green">See All Reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 8: FINAL CTA ===== -->
+<section class="op-section navy-bg final-cta">
+  <div class="op-inner">
+    <h2>Ready to <span>Fund Your Next Deal?</span></h2>
+    <p class="cta-sub">Let's build your custom funding strategy — no cost, no commitment.</p>
+    <div class="cta-contacts">
+      <a href="sms:8036536293" class="cta-contact-box">
+        <div class="cc-icon">💬</div>
+        <div class="cc-label">Text Us</div>
+        <div class="cc-value green">803-653-6293</div>
+      </a>
+      <a href="mailto:brett@swiftlinecapital.com" class="cta-contact-box">
+        <div class="cc-icon">✉️</div>
+        <div class="cc-label">Email Us</div>
+        <div class="cc-value">brett@swiftlinecapital.com</div>
+      </a>
+      <a href="https://apply.swiftlinecapital.com/book" class="cta-contact-box">
+        <div class="cc-icon">📅</div>
+        <div class="cc-label">Schedule a Call</div>
+        <div class="cc-value green">Book a Free Consult</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- OPT-IN FORM -->
+<section class="optin-section">
+  <div class="container">
+    <div class="section-label">Get Started Today</div>
+    <h2 class="section-title">Find Out What You Qualify For</h2>
+    <p class="section-subtitle">Fill out the form below and a funding specialist will reach out to walk you through your options — no commitment required.</p>
+    <div class="optin-form-wrap">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/1KZIEeJsRbu4lCdhyZRP"
+        id="inline-1KZIEeJsRbu4lCdhyZRP"
+        data-layout='{"id":"INLINE"}'
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Website Opt In"
+        data-height="undefined"
+        data-layout-iframe-id="inline-1KZIEeJsRbu4lCdhyZRP"
+        data-form-id="1KZIEeJsRbu4lCdhyZRP"
+        title="Website Opt In">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/"><img src="../assets/images/swipe-white.png" alt="Swift Line Capital"></a>
+      <p>Fast funding for real estate investors and business owners across all 50 states.</p>
+      <div class="footer-contact-info" style="margin:1rem 0;font-size:.88rem;line-height:2;">
+        <div>📞 <a href="tel:8036536293" style="color:rgba(255,255,255,.75);text-decoration:none;">803-653-6293</a></div>
+        <div>✉️ <a href="mailto:support@swiftlinecapital.com" style="color:rgba(255,255,255,.75);text-decoration:none;">support@swiftlinecapital.com</a></div>
+        <div style="color:rgba(255,255,255,.6);">🕐 Mon-Fri 9AM-6PM ET</div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Real Estate Loans</h4>
+      <ul>
+        <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+        <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+        <li><a href="/rehab/">Rehab Loans</a></li>
+        <li><a href="/dscr/">DSCR Loans</a></li>
+        <li><a href="/heloc/">HELOC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Business Loans</h4>
+      <ul>
+        <li><a href="/0percent/">0% Credit Stacking</a></li>
+        <li><a href="/bloc/">Line of Credit</a></li>
+        <li><a href="/term-loan/">Term Loans</a></li>
+        <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+        <li><a href="/mca/">Merchant Cash Advance</a></li>
+        <li><a href="/equipment-loan/">Equipment Financing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/partners/">Become a Partner</a></li>
+        <li><a href="/blog/">Blogs &amp; Resources</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+        <li><a href="/careers/">We're Hiring</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/disclosure-statement/">Disclosure Statement</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Swift Line Capital. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-of-use/">Terms of Use</a>
+      <a href="/disclosure-statement/">Disclosures</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script>
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-icon').textContent = '+';
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      // Open clicked if it was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        this.querySelector('.faq-icon').textContent = '-';
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

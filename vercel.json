@@ -319,6 +319,11 @@
       "source": "/schedule-interview",
       "destination": "/schedule-interview/",
       "permanent": true
+    },
+    {
+      "source": "/next-steps",
+      "destination": "/next-steps/",
+      "permanent": true
     }
   ]
 }

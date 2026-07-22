@@ -324,6 +324,11 @@
       "source": "/next-steps",
       "destination": "/next-steps/",
       "permanent": true
+    },
+    {
+      "source": "/sales-eod",
+      "destination": "/sales-eod/",
+      "permanent": true
     }
   ]
 }

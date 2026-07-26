@@ -329,6 +329,11 @@
       "source": "/sales-eod",
       "destination": "/sales-eod/",
       "permanent": true
+    },
+    {
+      "source": "/careers/application-submitted",
+      "destination": "/careers/application-submitted/",
+      "permanent": true
     }
   ]
 }

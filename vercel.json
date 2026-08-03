@@ -339,6 +339,11 @@
       "source": "/joanne",
       "destination": "https://docs.google.com/spreadsheets/d/1Y9Zjp7KnWA1mzCy5vAdl4nlwJNbDcy1B7ORhlJTD8bI/edit?usp=sharing",
       "permanent": false
+    },
+    {
+      "source": "/heloc-form",
+      "destination": "/heloc-form/",
+      "permanent": true
     }
   ]
 }

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Advisor &amp; Sales Consultant | Careers at Swift Line Capital</title>
+  <meta name="description" content="Swift Line Capital is hiring a Loan Advisor &amp; Sales Consultant to help borrowers, business owners, and investors access the right capital. High-earning remote sales role. Apply now.">
+  <link rel="canonical" href="https://www.swiftlinecapital.com/careers/loan-advisor-sales-consultant/">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .job-hero {
+      background: var(--navy);
+      padding: 5rem 1.5rem 4rem;
+      color: var(--white);
+    }
+    .job-hero .breadcrumb {
+      font-size: .85rem;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 1.5rem;
+    }
+    .job-hero .breadcrumb a {
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .job-hero .breadcrumb a:hover { color: var(--green); }
+    .job-hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .job-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+      color: var(--white);
+      margin: .5rem 0 1rem;
+      line-height: 1.2;
+    }
+    .job-hero h1 span { color: var(--green); }
+    .job-meta {
+      display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.25rem 0 2rem;
+    }
+    .job-meta-tag {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50px;
+      padding: .35rem 1rem;
+      font-size: .85rem;
+      color: rgba(255,255,255,.85);
+      font-weight: 500;
+    }
+    .job-hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .job-body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .job-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border, #e5e7ef);
+    }
+    .job-section:last-of-type { border-bottom: none; }
+    .job-section-label {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: .5rem;
+    }
+    .job-section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+      line-height: 1.3;
+    }
+    .job-section p {
+      font-size: 1rem;
+      color: var(--text-mid, #555);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .job-section p:last-child { margin-bottom: 0; }
+
+    .job-list {
+      list-style: none;
+      padding: 0; margin: 0;
+    }
+    .job-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .6rem 0;
+      font-size: .97rem;
+      color: var(--text-mid, #555);
+      line-height: 1.65;
+      border-bottom: 1px solid var(--border, #f0f1f5);
+    }
+    .job-list li:last-child { border-bottom: none; }
+    .job-list li::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 700;
+      font-size: .95rem;
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .85rem;
+      margin-top: .75rem;
+    }
+    .product-tag {
+      background: var(--off-white, #f7f8fa);
+      border-radius: 10px;
+      padding: .85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      font-size: .95rem;
+      color: var(--navy);
+      font-weight: 600;
+      border-left: 3px solid var(--green);
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: .5rem;
+    }
+    .detail-row {
+      background: var(--off-white, #f7f8fa);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      gap: .75rem;
+      align-items: flex-start;
+    }
+    .detail-row .dr-icon { font-size: 1.25rem; flex-shrink: 0; }
+    .detail-row .dr-label {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: .2rem;
+    }
+    .detail-row .dr-value {
+      font-size: .95rem;
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .earnings-box {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      color: var(--white);
+      margin-top: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .earnings-number {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--green);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .earnings-label {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.5);
+      margin-bottom: .25rem;
+    }
+    .earnings-desc {
+      font-size: .97rem;
+      color: rgba(255,255,255,.78);
+      line-height: 1.7;
+    }
+
+    .apply-cta-bar {
+      background: var(--green);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .apply-cta-bar h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--white);
+      margin-bottom: .5rem;
+    }
+    .apply-cta-bar p {
+      font-size: 1rem;
+      color: rgba(255,255,255,.88);
+      margin-bottom: 1.75rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-white {
+      background: var(--white);
+      color: var(--green);
+      font-weight: 700;
+    }
+    .btn-white:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    @media (max-width: 700px) {
+      .products-grid { grid-template-columns: 1fr; }
+      .details-grid { grid-template-columns: 1fr; }
+      .earnings-box { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+<script>
+var head = document.head;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://t.swiftlinecapital.com/v1/lst/universal-script?ph=c08ff61b2a7d38f14e311673db27ec88dbf29cb1a7950e5334b8feb18bbf6394&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
+head.appendChild(script);
+</script>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>📞 Fast Funding Available — Call / Text Now: <a href="tel:8036536293">803-653-6293</a></span>
+  <div class="top-bar-social">
+    <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <a href="/" class="logo"><img src="../../assets/images/swipe-logo.png" alt="Swift Line Capital"></a>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li class="dropdown">
+        <a href="/#real-estate-loans">Real Estate Loans &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+          <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+          <li><a href="/rehab/">Rehab Loans</a></li>
+          <li><a href="/dscr/">DSCR Loans</a></li>
+          <li><a href="/heloc/">HELOC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/#business-loans">Business Loans &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="/bloc/">Line of Credit</a></li>
+          <li><a href="/term-loan/">Term Loans</a></li>
+          <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+          <li><a href="/mca/">Merchant Cash Advance</a></li>
+          <li><a href="/equipment-loan/">Equipment Financing</a></li>
+        </ul>
+      </li>
+      <li><a href="/0percent/">0% Credit Stacking</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/contact/" class="nav-cta">Apply Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="job-hero">
+  <div class="job-hero-inner">
+    <div class="breadcrumb">
+      <a href="/careers/">&larr; Back to Careers</a>
+    </div>
+    <div style="font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem;">Open Position</div>
+    <h1>Loan Advisor &amp; <span>Sales Consultant</span></h1>
+    <div class="job-meta">
+      <span class="job-meta-tag">&#127758; Fully Remote</span>
+      <span class="job-meta-tag">&#9201; Full-Time</span>
+      <span class="job-meta-tag">&#128176; $8K&ndash;$15K/Month OTE</span>
+      <span class="job-meta-tag">&#9889; Immediate Opening</span>
+    </div>
+    <div class="job-hero-cta">
+      <a href="#apply-form" class="btn btn-green btn-lg">Apply Now &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<div style="padding: 3rem 0 5rem;">
+  <div class="job-body">
+
+    <!-- About the Role -->
+    <div class="job-section">
+      <div class="job-section-label">The Role</div>
+      <h2>About the Role</h2>
+      <p>Swift Line Capital is a fast-growing private lending brokerage and one-stop shop for business and real estate capital. As a Loan Advisor &amp; Sales Consultant, you'll work directly with borrowers, business owners, and investors to help them access the right capital &mdash; whether that's a fix and flip loan, bridge loan, DSCR, ground-up construction, HELOC, or one of our many other lending products including 0% interest credit card stacking, personal loans, business loans, and SBA loans.</p>
+      <p>This is a high-earning, fully remote sales role. Your job is to close deals. You'll take scheduled calls, identify the best loan product for each client's goals and eligibility, pitch terms, follow up relentlessly, and hand off funded deals to our processing team. Every product you close earns you commission &mdash; and with our full product suite, there's always something to pitch.</p>
+    </div>
+
+    <!-- Role Details -->
+    <div class="job-section">
+      <div class="job-section-label">Details</div>
+      <h2>Role Details</h2>
+      <div class="details-grid">
+        <div class="detail-row">
+          <div class="dr-icon">&#127758;</div>
+          <div>
+            <div class="dr-label">Location</div>
+            <div class="dr-value">Fully remote &mdash; must work US time zone hours</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="dr-icon">&#9201;</div>
+          <div>
+            <div class="dr-label">Hours</div>
+            <div class="dr-value">Full-time</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="dr-icon">&#128100;</div>
+          <div>
+            <div class="dr-label">Employment Type</div>
+            <div class="dr-value">1099 / Independent Contractor</div>
+          </div>
+        </div>
+        <div class="detail-row">
+          <div class="dr-icon">&#128176;</div>
+          <div>
+            <div class="dr-label">Pay Structure</div>
+            <div class="dr-value">Negotiable &mdash; base + commission or commission only</div>
+          </div>
+        </div>
+      </div>
+      <div class="earnings-box">
+        <div>
+          <div class="earnings-label">On-Track Earnings</div>
+          <div class="earnings-number">$8K&ndash;$15K<span style="font-size:1.2rem;font-weight:600;color:rgba(255,255,255,.6)">/mo</span></div>
+        </div>
+        <div class="earnings-desc">Top performers in our product suite earn six figures annually. With commissions on every closed deal and no cap on what you can pitch, your income is entirely in your hands.</div>
+      </div>
+    </div>
+
+    <!-- What You'll Do -->
+    <div class="job-section">
+      <div class="job-section-label">Responsibilities</div>
+      <h2>What You'll Do</h2>
+      <ul class="job-list">
+        <li>Take scheduled calls with leads and pitch the right loan products based on their goals and eligibility</li>
+        <li>Read and present term sheets for real estate loans and business loans</li>
+        <li>Manage your pipeline, leads, and follow-ups to stay organized</li>
+        <li>Submit deals to lenders and coordinate handoff to our internal processing team</li>
+        <li>Update contact notes and keep pipelines clean</li>
+        <li>Cross-sell and upsell across our full product suite when appropriate &mdash; every deal is an opportunity</li>
+      </ul>
+    </div>
+
+    <!-- Loan Products -->
+    <div class="job-section">
+      <div class="job-section-label">Products</div>
+      <h2>Loan Products You'll Work With</h2>
+      <p>Our full product suite means there's always a solution to offer every client &mdash; and a commission on every funded deal.</p>
+      <div class="products-grid">
+        <div class="product-tag">&#127962; Fix &amp; Flip Loans</div>
+        <div class="product-tag">&#127758; Bridge Loans</div>
+        <div class="product-tag">&#128202; DSCR (Debt Service Coverage Ratio) Loans</div>
+        <div class="product-tag">&#127959; Ground-Up Construction Loans</div>
+        <div class="product-tag">&#127968; HELOC (Home Equity Line of Credit)</div>
+        <div class="product-tag">&#128179; 0% Interest Credit Card Stacking</div>
+        <div class="product-tag">&#128188; Business Loans &amp; SBA Loans</div>
+        <div class="product-tag">&#128100; Personal Loans</div>
+      </div>
+    </div>
+
+    <!-- Requirements -->
+    <div class="job-section">
+      <div class="job-section-label">Qualifications</div>
+      <h2>What We're Looking For</h2>
+      <ul class="job-list">
+        <li>Strong sales background &mdash; you know how to close</li>
+        <li>Relentless with follow-ups &mdash; hot leads don't go cold on your watch</li>
+        <li>Highly organized &mdash; you keep detailed notes and clean pipelines</li>
+        <li>Self-sufficient and a go-getter &mdash; you don't wait to be told what to do</li>
+        <li>Experience or knowledge in lending or real estate is a big bonus, but not required &mdash; we provide full training</li>
+        <li>Must be able to work US time zone hours</li>
+      </ul>
+    </div>
+
+    <!-- How to Apply -->
+    <div class="job-section" id="apply-form">
+      <div class="job-section-label">Apply</div>
+      <h2>How to Apply</h2>
+      <p>Submit the survey below to apply for this position. Once completed, our team will review your application and get back to you within 1&ndash;3 business days with next steps.</p>
+      <iframe src="https://api.leadconnectorhq.com/widget/survey/86WK014WJj1u0FsMj6Bi" style="border:none;width:100%;" scrolling="no" id="86WK014WJj1u0FsMj6Bi" title="survey"></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
+
+  </div>
+</div>
+
+<!-- APPLY CTA BAR -->
+<section class="apply-cta-bar">
+  <h2>Ready to Start Closing?</h2>
+  <p>This is a high-earning role with no income cap. If you're a closer, we want to hear from you.</p>
+  <a href="#apply-form" class="btn btn-white btn-lg">Apply Now &rarr;</a>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/"><img src="../../assets/images/swipe-white.png" alt="Swift Line Capital"></a>
+      <p>Fast funding for real estate investors and business owners across all 50 states.</p>
+      <div class="footer-contact-info" style="margin:1rem 0;font-size:.88rem;line-height:2;">
+        <div>&#128222; <a href="tel:8036536293" style="color:rgba(255,255,255,.75);text-decoration:none;">803-653-6293</a></div>
+        <div>&#9993;&#65039; <a href="mailto:support@swiftlinecapital.com" style="color:rgba(255,255,255,.75);text-decoration:none;">support@swiftlinecapital.com</a></div>
+        <div style="color:rgba(255,255,255,.6);">&#128336; Mon-Fri 9AM-6PM ET</div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/swiftlinecapital" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Real Estate Loans</h4>
+      <ul>
+        <li><a href="/fix-and-flip/">Fix &amp; Flip Loans</a></li>
+        <li><a href="/ground-up-construction/">Ground Up Construction</a></li>
+        <li><a href="/rehab/">Rehab Loans</a></li>
+        <li><a href="/dscr/">DSCR Loans</a></li>
+        <li><a href="/heloc/">HELOC</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Business Loans</h4>
+      <ul>
+        <li><a href="/0percent/">0% Credit Stacking</a></li>
+        <li><a href="/bloc/">Line of Credit</a></li>
+        <li><a href="/term-loan/">Term Loans</a></li>
+        <li><a href="/sba/">SBA 7(a) &amp; 504</a></li>
+        <li><a href="/mca/">Merchant Cash Advance</a></li>
+        <li><a href="/equipment-loan/">Equipment Financing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/partners/">Become a Partner</a></li>
+        <li><a href="/blog/">Blogs &amp; Resources</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+        <li><a href="/careers/" style="color:var(--green);font-weight:600;">We're Hiring</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/disclosure-statement/">Disclosure Statement</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Swift Line Capital. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-of-use/">Terms of Use</a>
+      <a href="/disclosure-statement/">Disclosures</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

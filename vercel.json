@@ -344,6 +344,21 @@
       "source": "/heloc-form",
       "destination": "/heloc-form/",
       "permanent": true
+    },
+    {
+      "source": "/careers/loan-advisor-sales-consultant",
+      "destination": "/careers/loan-advisor-sales-consultant/",
+      "permanent": true
+    },
+    {
+      "source": "/loan-advisor",
+      "destination": "/careers/loan-advisor-sales-consultant/",
+      "permanent": true
+    },
+    {
+      "source": "/loan-advisor/",
+      "destination": "/careers/loan-advisor-sales-consultant/",
+      "permanent": true
     }
   ]
 }

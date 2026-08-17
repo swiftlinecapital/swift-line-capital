@@ -359,6 +359,11 @@
       "source": "/loan-advisor/",
       "destination": "/careers/loan-advisor-sales-consultant/",
       "permanent": true
+    },
+    {
+      "source": "/loan-application",
+      "destination": "https://smallbizheroes.com/cobrand-form/?partner=001Vv00000utlxX",
+      "permanent": false
     }
   ]
 }

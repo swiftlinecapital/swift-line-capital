@@ -364,6 +364,11 @@
       "source": "/loan-application",
       "destination": "https://smallbizheroes.com/cobrand-form/?partner=001Vv00000utlxX",
       "permanent": false
+    },
+    {
+      "source": "/bryan",
+      "destination": "/bryan/",
+      "permanent": true
     }
   ]
 }

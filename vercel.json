@@ -369,6 +369,11 @@
       "source": "/bryan",
       "destination": "/bryan/",
       "permanent": true
+    },
+    {
+      "source": "/processing-call",
+      "destination": "/processing-call/",
+      "permanent": false
     }
   ]
 }

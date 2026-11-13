@@ -26,13 +26,14 @@
     .schedule-wrap h2{font-family:'Poppins',sans-serif;font-size:1.5rem;color:var(--navy);margin-bottom:.5rem;}
     .schedule-wrap > p{color:var(--text-mid);font-size:.95rem;line-height:1.65;margin-bottom:2rem;}
     .schedule-wrap iframe{width:100%;min-height:700px;border:none;display:block;}
-    .what-to-expect{background:var(--white);border-radius:14px;padding:1.75rem 2rem;margin-bottom:2.5rem;border:1px solid var(--border);}
-    .what-to-expect h3{font-family:'Poppins',sans-serif;font-size:1.1rem;color:var(--navy);margin-bottom:1rem;}
-    .expect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
-    .expect-item{display:flex;align-items:flex-start;gap:.75rem;}
-    .expect-icon{width:36px;height:36px;border-radius:50%;background:rgba(77,184,72,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;}
-    .expect-text strong{display:block;color:var(--navy);font-size:.9rem;font-weight:600;margin-bottom:.15rem;}
-    .expect-text span{color:var(--text-mid);font-size:.82rem;line-height:1.5;}
+    .what-to-expect{margin-bottom:2.5rem;}
+    .what-to-expect h3{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:var(--text-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem;}
+    .expect-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+    .expect-item{background:var(--off-white);border-radius:14px;padding:1.5rem 1.5rem 1.5rem 1.25rem;border-left:4px solid var(--green);position:relative;overflow:hidden;}
+    .expect-num{font-family:'Poppins',sans-serif;font-size:3.5rem;font-weight:800;color:var(--green);opacity:.12;position:absolute;top:-.5rem;right:.75rem;line-height:1;user-select:none;}
+    .expect-title{font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.4rem;}
+    .expect-desc{color:var(--text-mid);font-size:.85rem;line-height:1.6;}
+    @media(max-width:580px){.expect-grid{grid-template-columns:1fr;}}
     @media(max-width:768px){.schedule-hero{padding:3.5rem 1rem 3rem;}.schedule-body{padding:2.5rem 1rem 4rem;}.schedule-wrap{padding:1.75rem 1.25rem;}.checklist{gap:.75rem 1.5rem;}}
   </style>
 <script>
@@ -105,32 +106,24 @@ head.appendChild(script);
       <h3>What We'll Cover on the Call</h3>
       <div class="expect-grid">
         <div class="expect-item">
-          <div class="expect-icon">📋</div>
-          <div class="expect-text">
-            <strong>Document Checklist</strong>
-            <span>We'll go over exactly what's needed to begin processing your loan.</span>
-          </div>
+          <div class="expect-num">1</div>
+          <div class="expect-title">Document Checklist</div>
+          <div class="expect-desc">We'll walk through exactly what's needed to begin processing — so there are no surprises and no delays.</div>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">⏱️</div>
-          <div class="expect-text">
-            <strong>Timeline & Milestones</strong>
-            <span>Understand key dates and what to expect at each stage of the process.</span>
-          </div>
+          <div class="expect-num">2</div>
+          <div class="expect-title">Timeline &amp; Milestones</div>
+          <div class="expect-desc">We'll map out key dates and what to expect at every stage so you're never left guessing where things stand.</div>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">🏠</div>
-          <div class="expect-text">
-            <strong>Deal Details</strong>
-            <span>Confirm loan terms, property info, and any outstanding conditions.</span>
-          </div>
+          <div class="expect-num">3</div>
+          <div class="expect-title">Deal Details</div>
+          <div class="expect-desc">We'll confirm loan terms, property info, and any outstanding conditions before we move into processing.</div>
         </div>
         <div class="expect-item">
-          <div class="expect-icon">💬</div>
-          <div class="expect-text">
-            <strong>Open Q&amp;A</strong>
-            <span>Ask anything — we're here to make sure you feel confident moving forward.</span>
-          </div>
+          <div class="expect-num">4</div>
+          <div class="expect-title">Open Q&amp;A</div>
+          <div class="expect-desc">Ask anything you need answered. We want you confident and clear on every step before we hang up.</div>
         </div>
       </div>
     </div>
